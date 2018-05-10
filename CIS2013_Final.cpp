@@ -204,9 +204,9 @@ int BikeInventory::search()
 		{
 			Inventory[count].Mut;
 			if (Auto == Inventory[count])
-				cout << "Match found" << count << endl;
+				cout << "Hmm! Match found" << count << endl;
 			else
-				cout << "Match not found, try again." << endl;
+				cout << "OOPS! Match not found, try again." << endl;
 		}
 		break;
 	case 3:
