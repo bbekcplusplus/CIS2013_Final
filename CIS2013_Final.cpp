@@ -66,9 +66,9 @@ int main()
 int menu()
 {
 	int selection;
-	cout << "(1) Enter to add Bikes .......:" << endl;
-	cout << "(2) Enter to delete Bikes.....:" << endl;
-	cout << "(3) Enter to search Bikes.....:" << endl;
+	cout << "(1) Enter to add motorcycles .......:" << endl;
+	cout << "(2) Enter to delete motorcycles.....:" << endl;
+	cout << "(3) Enter to search motorcycles.....:" << endl;
 	cout << "(4) Enter to exit............:" << endl;
 	cout << "PLEASE ENTER YOUR SELECTIO:::" << endl;
 	cin >> selection;
@@ -88,7 +88,7 @@ void BikeInventory::check_price()
 {
 	if (dealer_price < 0.0 || dealer_cost < 0.0)
 	{
-		cout << "Wrong Price please enter right price...:" << endl;
+		cout << "OOPS! Wrong Price please enter right price...:" << endl;
 		exit(0);
 	}
 }
@@ -139,12 +139,12 @@ void BikeInventory::add_car(istream& ins, BikeInventory& Inventory)
 		ins >> Inventory.exterior_color;
 		cout << "Enter the interior color of the motorcycle. " << endl;
 		ins >> Inventory.interior_color;
-		cout << "Enter the Vin number of the motorcycle. " << endl;
+		cout << "Enter the VIN number of the motorcycle. " << endl;
 		ins >> Inventory.vin;
 		cout << "Enter the engine size of the motorcycle. " << endl << endl;
 		ins >> Inventory.engine_size;
 		i++;
-	}cout << "The number of motorcycles in inventory is " << number_of_cars << endl;
+	}cout << "The number of motorcycles in inventory is: " << number_of_cars << endl;
 }
 void BikeInventory::output_info(ostream &outs, BikeInventory& Inventory)
 {
@@ -164,10 +164,10 @@ void BikeInventory::delete_car()
 	int car_num;
 	char choice;
 	int item, i = 0;
-	cout << "enter inventory number of the motorcycle you want to delete?" << endl;
+	cout << "Enter inventory number of the motorcycle you want to delete?" << endl;
 	cin >> car_num;
 	item = car_num - 100;
-	cout << "comfirm delete" << item << " ? (y/n)";
+	cout << "comfirm delete!!" << item << " ? (y/n)";
 	cin >> choice;
 	if (choice == 'y')
 		for (int count = item; count + 1 < i + 1; count++)
@@ -192,9 +192,9 @@ int BikeInventory::search()
 		{
 			Inventory[count].Acc;
 			if (Auto == Inventory[count])
-				cout << "Match found" << 100 + count << count << endl;
+				cout << "Hmm. Match found" << 100 + count << count << endl;
 			else
-				cout << "Match not found, try again." << endl;
+				cout << "OOPS! Match not found, try again." << endl;
 		}
 		break;
 	case 2:
