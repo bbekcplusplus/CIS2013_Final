@@ -70,7 +70,7 @@ int menu()
 	cout << "(2) Enter to delete Bikes.....:" << endl;
 	cout << "(3) Enter to search Bikes.....:" << endl;
 	cout << "(4) Enter to exit............:" << endl;
-	cout << "Please enter selection.......:" << endl;
+	cout << "PLEASE ENTER YOUR SELECTIO:::" << endl;
 	cin >> selection;
 	cout << endl;
 	while ((selection < 1 || selection > 4))
@@ -181,7 +181,7 @@ int BikeInventory::search()
 	cout << "(1) Enter Make of motorcycle...:" << endl;
 	cout << "(2) Enter Model of motorcycle..:" << endl;
 	cout << "(3) Display all motorcycles....:" << endl;
-	cout << "(4) Enter to exit....:" << endl << endl;
+	cout << "(4) Enter to EXIT....:" << endl << endl;
 	cin >> choice;
 	switch (choice)
 	{
